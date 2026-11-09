@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vibe Coded Studio</title>
+<meta name="description" content="Eclipse: The Moon is Full Tonight, and Nightfold for Galaxy Z Fold. Games and apps by Vibe Coded Studio.">
+<meta property="og:title" content="Vibe Coded Studio">
+<meta property="og:description" content="Eclipse on Google Play · Nightfold for Galaxy Z Fold">
+<meta property="og:image" content="https://vibe-coded-studio.github.io/img/eclipse_bg.jpg">
+<link rel="icon" href="img/eclipse_icon.png">
+<style>
+@font-face{font-family:"Cinzel Decorative";src:url(fonts/CinzelDecorative-Bold.ttf);font-weight:700;font-display:swap}
+@font-face{font-family:"Cinzel";src:url(fonts/Cinzel.ttf);font-display:swap}
+:root{--ink:#f3ecff;--muted:#bfb3dc;--card:rgba(20,12,40,.72);--line:rgba(201,168,255,.28);--glow:#a875ff}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{background:#0b0912 url(img/eclipse_bg.jpg) center top/cover fixed no-repeat;color:var(--ink);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:flex;justify-content:center}
+.wrap{width:100%;max-width:460px;padding:56px 16px 40px;text-align:center}
+.logo{font-family:"Cinzel Decorative",serif;font-weight:700;font-size:44px;letter-spacing:.02em;margin:0;color:#14081f;
+  -webkit-text-stroke:1px #f4e6ff;text-shadow:0 0 18px rgba(232,200,255,.9),0 0 40px rgba(168,117,255,.6)}
+.studio{font-family:"Cinzel",serif;letter-spacing:.18em;font-size:13px;color:var(--muted);margin:10px 0 30px;text-transform:uppercase}
+.card{display:flex;align-items:center;gap:14px;text-align:left;text-decoration:none;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);border-radius:18px;padding:14px 16px;margin:12px 0;backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);transition:transform .15s,border-color .15s,box-shadow .15s}
+.card:hover,.card:focus-visible{transform:translateY(-2px);border-color:var(--glow);box-shadow:0 0 24px rgba(168,117,255,.35);outline:none}
+.card img{width:56px;height:56px;border-radius:14px;flex:none}
+.card .ico{width:56px;height:56px;border-radius:14px;flex:none;display:grid;place-items:center;background:#1c1230;font-size:26px}
+.card b{display:block;font-size:16.5px}
+.card span{display:block;font-size:13px;color:var(--muted);margin-top:3px;line-height:1.35}
+.tag{display:inline-block;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#14081f;background:#d8c4ff;
+  border-radius:20px;padding:2px 8px;margin-left:6px;vertical-align:2px}
+h2{font-family:"Cinzel",serif;font-size:12px;letter-spacing:.2em;color:var(--muted);text-transform:uppercase;margin:28px 0 4px;font-weight:400}
+footer{color:var(--muted);font-size:11.5px;margin-top:34px;opacity:.8}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1 class="logo">Eclipse</h1>
+  <p class="studio">Vibe Coded Studio</p>
+
+  <h2>The game</h2>
+  <a class="card" href="https://play.google.com/store/apps/details?id=com.vibecodedstudio.eclipsemoonisfulltonight">
+    <img src="img/eclipse_icon.png" alt="">
+    <div><b>Eclipse: The Moon is Full Tonight <i class="tag">Out now</i></b><span>Get it on Google Play · iPhone &amp; iPad coming soon</span></div>
+  </a>
+  <a class="card" href="https://youtu.be/zp-Yyu8xXSM">
+    <div class="ico">▶</div>
+    <div><b>Watch the trailer</b><span>30 seconds of werewolf on the rooftops</span></div>
+  </a>
+
+  <h2>The Fold app</h2>
+  <a class="card" href="https://github.com/Vibe-Coded-Studio/nightfold/releases/latest">
+    <img src="img/nightfold_icon.png" alt="">
+    <div><b>Nightfold <i class="tag">Free</i></b><span>Opening animations for the Galaxy Z Fold · download the APK (needs Shizuku)</span></div>
+  </a>
+
+  <h2>Follow</h2>
+  <a class="card" href="https://www.youtube.com/@vibecodedstudio">
+    <div class="ico">▶</div>
+    <div><b>YouTube: @vibecodedstudio</b><span>Game updates, the Nightfold setup video and more</span></div>
+  </a>
+
+  <footer>© 2026 Vibe Coded Studio · <a href="https://fonzpaak-bot.github.io/eclipse-privacy/">Eclipse privacy policy</a></footer>
+</main>
+</body>
+</html>
