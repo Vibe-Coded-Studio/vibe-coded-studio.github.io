@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nightfold for Galaxy Z Fold</title>
+<meta name="description" content="Nightfold: free, open-source opening animations for the Samsung Galaxy Z Fold. 29 effects, no internet permission, nothing leaves your phone.">
+<meta property="og:title" content="Nightfold for Galaxy Z Fold">
+<meta property="og:description" content="Free, open-source fold-open animations. 29 effects. No internet permission.">
+<meta property="og:image" content="https://vibe-coded-studio.github.io/img/nf_stained.jpg">
+<link rel="icon" href="img/nightfold_icon.png">
+<style>
+@font-face{font-family:"Cinzel Decorative";src:url(fonts/CinzelDecorative-Bold.ttf);font-weight:700;font-display:swap}
+@font-face{font-family:"Cinzel";src:url(fonts/Cinzel.ttf);font-display:swap}
+:root{--ink:#f3ecff;--muted:#bfb3dc;--card:rgba(20,12,40,.72);--line:rgba(201,168,255,.28);--glow:#a875ff;--ok:#9be7b0}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{background:#0b0912 url(img/eclipse_bg.jpg) center top/cover fixed no-repeat;color:var(--ink);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:flex;justify-content:center;line-height:1.45}
+.wrap{width:100%;max-width:640px;padding:40px 16px 40px}
+a{color:#d8c4ff}
+.back{font-size:13px;color:var(--muted);text-decoration:none}
+.hero{text-align:center;margin:18px 0 8px}
+.hero img{width:84px;height:84px;border-radius:20px;box-shadow:0 0 30px rgba(168,117,255,.5)}
+h1{font-family:"Cinzel Decorative",serif;font-weight:700;font-size:42px;margin:10px 0 0;color:#14081f;
+  -webkit-text-stroke:1px #f4e6ff;text-shadow:0 0 18px rgba(232,200,255,.9),0 0 40px rgba(168,117,255,.6)}
+.sub{color:var(--muted);margin:6px 0 14px}
+.pills{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-bottom:18px}
+.pill{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#14081f;background:#d8c4ff;border-radius:20px;padding:3px 10px}
+.pill.soon{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:26px}
+.btn{display:inline-block;padding:12px 18px;border-radius:14px;text-decoration:none;font-weight:600;color:#14081f;background:#d8c4ff;
+  box-shadow:0 0 20px rgba(168,117,255,.35)}
+.btn.alt{background:var(--card);color:var(--ink);border:1px solid var(--line);box-shadow:none}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 6px}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
+.cap{font-size:12px;color:var(--muted);text-align:center;margin:0 0 26px}
+section{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px;margin:14px 0;
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+h2{font-family:"Cinzel",serif;font-size:13px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;margin:0 0 10px;font-weight:400}
+ul{margin:0;padding-left:20px}
+li{margin:6px 0}
+.safe li::marker{content:"✓  ";color:var(--ok)}
+ol li{margin:6px 0}
+.fx{font-size:14px;color:var(--muted)}
+.fx b{color:var(--ink)}
+.video{position:relative;width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+footer{color:var(--muted);font-size:11.5px;margin-top:28px;text-align:center;opacity:.85}
+footer a{color:var(--muted)}
+@media (max-width:480px){h1{font-size:34px}.gallery{grid-template-columns:1fr 1fr}.gallery img:last-child{display:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <a class="back" href="./">← Vibe Coded Studio</a>
+  <div class="hero">
+    <img src="img/nightfold_icon.png" alt="Nightfold icon">
+    <h1>Nightfold</h1>
+    <p class="sub">An opening animation for your Galaxy Z Fold. It covers the black flash when the phone switches screens.</p>
+    <div class="pills">
+      <span class="pill">Free</span><span class="pill">Open source</span><span class="pill">No internet permission</span>
+      <span class="pill soon">Google Play: coming soon</span>
+    </div>
+  </div>
+  <div class="btns">
+    <a class="btn" href="https://github.com/Vibe-Coded-Studio/nightfold/releases/latest">Download the APK</a>
+    <a class="btn alt" href="https://youtu.be/nGb0BusZnGo">Watch the 2-min setup</a>
+  </div>
+
+  <div class="gallery">
+    <img src="img/nf_stained.jpg" alt="Stained Glass effect on a Galaxy Z Fold">
+    <img src="img/nf_leaves.jpg" alt="Autumn Leaves effect">
+    <img src="img/nf_hologram.jpg" alt="Hologram effect">
+  </div>
+  <p class="cap">Stained Glass · Autumn Leaves · Hologram, on a real Fold</p>
+
+  <section class="safe">
+    <h2>Is it safe?</h2>
+    <ul>
+      <li><b>It can't go online.</b> Nightfold doesn't have Android's internet permission, so it has no way to send anything anywhere.</li>
+      <li><b>Nothing leaves your phone.</b> The home-screen pictures it uses for the effect are kept in Nightfold's own app folder, which other apps can't open, and are deleted if you uninstall.</li>
+      <li><b>No ads, no accounts, no tracking.</b></li>
+      <li><b>All the code is public</b> on <a href="https://github.com/Vibe-Coded-Studio/nightfold">GitHub</a> (MIT licence), so anyone can read exactly what it does.</li>
+      <li><b>Prefer Google Play?</b> A Play Store version is on the way, so Google's checks will cover it too.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What you need</h2>
+    <ul>
+      <li>A Samsung Galaxy Z Fold running Android 14 or newer</li>
+      <li><a href="https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api">Shizuku</a> (free, on Google Play). It lets Nightfold watch the hinge and show the effect over both screens.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Setup</h2>
+    <ol>
+      <li>Download the APK, install it and open it.</li>
+      <li>Tap <b>Get Shizuku</b>, then <b>Start Shizuku</b> (the first time, Shizuku walks you through Wireless debugging).</li>
+      <li>Tap <b>Allow</b>. The effect turns on.</li>
+    </ol>
+    <p class="fx" style="margin:10px 0 12px">After a reboot, start Shizuku again. Nightfold reconnects by itself.</p>
+    <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/nGb0BusZnGo" title="Nightfold setup tutorial" loading="lazy" allowfullscreen></iframe></div>
+  </section>
+
+  <section class="fx">
+    <h2>29 effects</h2>
+    <p><b>Eclipse:</b> Eclipse Bloom, Corona, Constellation, Nebula Burn</p>
+    <p><b>Seasonal:</b> Snow Day, Autumn Leaves, Gift Wrap</p>
+    <p><b>Bloom-style:</b> Honeycomb Bloom, Lightning Veins, Stained Glass, Tile Flip, Spiral Galaxy, Kintsugi, Flower Bloom, Frosted Glass</p>
+    <p><b>More:</b> Eclipse Ink, Fireflies, Ember Burn, Starfall, Petal Storm, Frost Bloom, Aurora, Glitch Warp</p>
+    <p><b>Classic:</b> Stardust, Pixel Assemble, Sketch to Paint, Hologram, Crystal, Raindrops</p>
+    <p>Tune the speed, blur and wobble, add a finish sweep, or let it learn how fast you open your phone.</p>
+  </section>
+
+  <footer>© 2026 Vibe Coded Studio · <a href="nightfold-privacy.html">Nightfold privacy policy</a> ·
+    Not affiliated with Samsung. Galaxy Z Fold is a trademark of Samsung Electronics.</footer>
+</main>
+</body>
+</html>
